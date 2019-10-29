@@ -1,0 +1,10 @@
+<p>component1 works!</p>
+
+<input #input1 type="text">
+<button (click)="onclick(input1.value)">display</button>
+
+
+<app-component2 (childEvent)="message=$event" [parentData] = "names"></app-component2>
+
+
+<h1>{{message}}</h1>
